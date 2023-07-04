@@ -1,0 +1,67 @@
+
+"""
+Holiday Trek Interactive Story.
+
+Created by Brianna De La Riva
+
+There are several outcomes to this story! Keep playing with different decisions to find them all out. You are trying to make it to your Christmas Gathering Party in time for Christmas. Do you make it to your destination? Or does it end you with wild turns of situations to deal with.
+
+Enjoy!
+
+"""
+def holidaytrek():
+  print "It's Christmas Eve and you are in the magical city of Snowlette. You're on a mission to get home in Jollyville before Christmas Day for your Christmas Gathering Party."
+  print "Are you ready to begin your journey?"
+  print "Type c for Certainly; type n for No"
+  answer = raw_input()
+  if answer == "c":
+    print "You head through the freezing cold trying to make your way through. It's too much snow to keep traveling, you'll have to stop and wait it out for a while."
+    first_1()
+  else:
+    print "You end up spending the night in Snowlette. Your absense makes your family and friends wonder where you are. Due to everyone not being together, YOU have ruined Christmas. End."
+    
+def first_1(): 
+  print "  You see a light ahead, but you are blinded from the snow. Do you go over to it or not?"
+  print "Type y for yes and n for no."
+  answer = raw_input()
+  if answer == "y":
+    print "You head over to the light. It ends up being a giant gingerbread house. You enter inside and see a fireplace with a fire already lit with a stew simmering above it, however it strangely shows no signs of an owner. Its still snowing quite a bit outside."
+    second_()
+  else:
+      print "The whirling winds and snow from the blizzard have made you disoriented. You end up becoming lost and end up in some woods. You are found the next day frozen to death underneath a oak tree. End."
+      
+def second_():
+  print " Do you go over to the fire and enjoy the warmth and have something to eat?" 
+  print "d for Definitely and c for Can't do that, sorry."
+  answer_= raw_input()
+  if answer_ == "d":
+    print "You take a seat near the fire and start having some of the stew. The warmth of the fire and crackling of the fire makes you feel at ease. You slowly fall asleep in the chair."
+    print "You end up sleeping through out the whole night. You never made it to Jollyville and have missed the Christmas friends/family gathering. Everyone who was expecting you began to be sad and wondered where you were. You brought so much sadness that you ruined Christmas."
+    print "End."
+  else:
+    print "You stay away from the fire and ignore the tempting stew. You look out the window and see that the snow has already cleared. You start to head out back onto your journey to home."
+    print ". . . . . . .  . . .  .  . . . . .  . . . . .  . "
+    print "After traveling quite a few miles, you've come to reach the town of Antlersly, just before Jollyville. You while you are walking you turn and notice a stand with people giving out hot cocoa. Do you stop to get a cup, or continue on? "
+    print "enter i for I suppose so, why not? or enter n for Nope, I have to keep moving."
+  answer = raw_input()
+  if answer == "i":
+    print "You stop for a cup of hot chocolate. It tastes like no other hot cocoa you've ever had before. The unparalleled taste causes you to keep drinking more and more of it. Before long you are high on sugar and singing holiday tunes with everyone, making new friends. You soon forget having to get back to Snowlette and end up staying in Antlersly, missing your family and friends in Jollyville. Everyone in Jollyville begins to worry about you and grows sad from your absense. You end up ruining Christmas for them. But made a bunch of new friends in the process. End. "
+    
+  else:
+      print "Instead of getting tempted by the Hot Cocoa, you keep heading towards Jollyville, just one more town over. You see a bench and ponder whether to take a seat or not for a moments rest. Do you? y for yes and n for no" 
+      
+  answer = raw_input()
+  if answer == "y":
+    print "You sit on the bench. You begin to feel better having some rest. Unbeknownst to you a snow leopard stalks you from behind and pounces towards you. You are found the next day dead from an animal attack. End."
+  else: 
+    print "Instead of resting you trek on. You come across a puppy in the snow, he doesnt seem to be moving, do you go see it? y for yes n for no."
+    
+    answer = raw_input()
+  if answer == "y":
+    print "You go over to inspect the puppy. When you turn his body over he is dead with a bunch of rats eating at him. You are bitten by the rats and they start climbing up you. You are found the next morning dead End."
+  else: 
+    print "You finally arrive at Jollyville at around 8AM. You are just in time for the start of the Christmas Gathering Party. Everyone is over filled with joy with the holiday spirit. They welcome you with hugs and presents. End"
+
+  
+  
+holidaytrek()
